@@ -1,0 +1,10 @@
+[
+    {
+       "title": "Eaglercraft Music",
+       "version": "1.12.2",
+       "icon": "./assets/images/icons/dogos-mobile.png",
+       "link": "./mc/mc/1.8.8/?userscript=flameddogo99-eaglermobile.js",
+       "active": true
+    }
+   
+ ]

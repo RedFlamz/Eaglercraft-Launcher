@@ -40,7 +40,13 @@ function generateprofile(game) {
             selectedGame3 = JSON.stringify(data[0]); localStorage.setItem("assisted", selectedGame3);
         });
     };
-    if (game === 3 && selectedGame3) {selectedGame = JSON.parse(selectedGame3);  running = true;}; 
+    if (game === 3 && selectedGame3) { selectedGame = JSON.parse(selectedGame3); running = true; }; 
+    if (!selectedGame4) {
+        fetch("./assets/json/packs.json").then((response) => response.json()).then((data) => {
+            selectedGame4 = JSON.stringify(data[0]); localStorage.setItem("assisted", selectedGame4);
+        });
+    };
+    if (game === 4 && selectedGame4) { selectedGame = JSON.parse(selectedGame4); running = true; }; 
     if (running === true) {
     document.getElementById('gametitle').innerHTML = selectedGame.title;
     document.getElementById('gameversion').innerHTML = selectedGame.version;
@@ -51,6 +57,7 @@ function generateprofile(game) {
         localStorage.setItem("modslauncher", "");
         modslauncher = [];
     }
+    
 };
 
 // Generate Game Options
@@ -72,7 +79,8 @@ function generategames(path) {
                 document.getElementById('playbutton').href = game.link;
                 if (path === "./assets/json/base.json") {selectedGame1 = JSON.stringify(game); localStorage.setItem("basegame", selectedGame1)};
                 if (path === "./assets/json/modded.json") {selectedGame2 = JSON.stringify(game); localStorage.setItem("moddedgame", selectedGame2)};
-                if (path === "./assets/json/assisted.json") {selectedGame3 = JSON.stringify(game); localStorage.setItem("assisted", selectedGame3)};
+                if (path === "./assets/json/assisted.json") { selectedGame3 = JSON.stringify(game); localStorage.setItem("assisted", selectedGame3) };
+                if (path === "./assets/json/packs.json") { selectedGame4 = JSON.stringify(game); localStorage.setItem("packs", selectedGame4) };
                 dropdowntoggle();
             });
         
@@ -356,6 +364,20 @@ function eaglercontrols(){
     document.getElementById('header2').style.display = 'none';
     document.getElementById('header5').style.display = 'none';
     document.getElementById('gtabs4').classList.add('selected');
+}
+
+function eaglerpacks() {
+    launcher = "./assets/json/packs.json";
+    resetTabSelected();
+    generateprofile(4);
+    generategames(launcher);
+    generatelaunchers(launcher);
+    document.getElementById('game-bg').style.backgroundImage = 'url(./assets/images/packs.jpg)';
+    document.getElementById('game-title').src = './assets/images/packs_title.png';
+    document.getElementById('gameedition').innerHTML = 'EAGLERCRAFT RESCOURCE PACKS';
+    document.getElementById('header2').style.display = 'none';
+    document.getElementById('header5').style.display = 'none';
+    document.getElementById('gtabs5').classList.add('selected');
 }
 
 // Header Options
