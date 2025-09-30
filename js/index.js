@@ -17,6 +17,7 @@ function errorNA(text) {
 let selectedGame1 = localStorage.getItem("basegame");
 let selectedGame2 = localStorage.getItem("moddedgame");
 let selectedGame3 = localStorage.getItem("assisted");
+let selectedGame3 = localStorage.getItem("packs");
 let modslauncher
 if (localStorage.getItem("modslauncher")) {modslauncher = JSON.parse(localStorage.getItem("modslauncher"))};
 
@@ -43,7 +44,7 @@ function generateprofile(game) {
     if (game === 3 && selectedGame3) { selectedGame = JSON.parse(selectedGame3); running = true; }; 
     if (!selectedGame4) {
         fetch("./assets/json/packs.json").then((response) => response.json()).then((data) => {
-            selectedGame4 = JSON.stringify(data[0]); localStorage.setItem("assisted", selectedGame4);
+            selectedGame4 = JSON.stringify(data[0]); localStorage.setItem("packs", selectedGame4);
         });
     };
     if (game === 4 && selectedGame4) { selectedGame = JSON.parse(selectedGame4); running = true; }; 
