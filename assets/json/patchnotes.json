@@ -1,5 +1,5 @@
 [
-       {
+    {
         "title": "TuffClient",
         "version": "1.12.2",
         "description": "TuffClient Added",
@@ -8,7 +8,6 @@
         "type": "game",
         "notes": []
     },
-      
     {
         "title": "Eaglercraft Launcher Release",
         "version": "v1.0.00",
