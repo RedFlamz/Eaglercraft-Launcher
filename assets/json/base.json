@@ -14,6 +14,20 @@
        "active": true
     },
     {
+       "title": "TuffClient",
+       "version": "1.12.2",
+       "icon": "./assets/images/mc-icons/tuff.png",
+       "link": "./mc/tuffclient/",
+       "active": true
+    },
+    {
+       "title": "TuffClient WASM",
+       "version": "1.12.2-wasm",
+       "icon": "./assets/images/mc-icons/tuff-wasm.png",
+       "link": "./mc/tuffclient-wasm/",
+       "active": true
+    },
+    {
        "title": "Previous release",
        "version": "1.8.8-u51",
        "icon": "./assets/images/mc-icons/dirt.png",
