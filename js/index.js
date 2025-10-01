@@ -375,7 +375,7 @@ function eaglerpacks() {
     generatelaunchers(launcher);
     document.getElementById('game-bg').style.backgroundImage = 'url(./assets/images/packs.jpg)';
     document.getElementById('game-title').src = './assets/images/packs_title.png';
-    document.getElementById('gameedition').innerHTML = 'EAGLERCRAFT RESCOURCE PACKS';
+    document.getElementById('gameedition').innerHTML = 'EAGLERCRAFT RESOURCE PACKS';
     document.getElementById('header2').style.display = 'none';
     document.getElementById('header5').style.display = 'none';
     document.getElementById('gtabs5').classList.add('selected');
