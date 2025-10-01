@@ -17,7 +17,7 @@ function errorNA(text) {
 let selectedGame1 = localStorage.getItem("basegame");
 let selectedGame2 = localStorage.getItem("moddedgame");
 let selectedGame3 = localStorage.getItem("assisted");
-let selectedGame3 = localStorage.getItem("packs");
+let selectedGame4 = localStorage.getItem("packs");
 let modslauncher
 if (localStorage.getItem("modslauncher")) {modslauncher = JSON.parse(localStorage.getItem("modslauncher"))};
 
