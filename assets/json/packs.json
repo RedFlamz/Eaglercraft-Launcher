@@ -1,11 +1,5 @@
 [
-    {
-       "title": "Re Add Eaglercraft Music",
-       "version": "1.6.1 - 1.12.2",
-       "icon": "./assets/images/icons/music.png",
-       "link": "./packs/music.zip",
-       "active": true
-    },
+   
     {
        "title": "Jappabp 1.12 (Update Textures)",
        "version": "1.12",
