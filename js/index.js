@@ -382,7 +382,7 @@ function eaglerpacks() {
 }
 
 function credits() {
-    window.location.href = "/credits.html";
+    window.location.href = "/Eaglercraft-Launcher/credits.html";
 }
 
 
