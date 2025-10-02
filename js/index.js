@@ -381,6 +381,11 @@ function eaglerpacks() {
     document.getElementById('gtabs5').classList.add('selected');
 }
 
+function credits() {
+    window.location.href = "/credits.html";
+}
+
+
 // Header Options
 function playheader(){
     resetHeaderSelected();
